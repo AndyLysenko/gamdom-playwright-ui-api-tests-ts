@@ -1,0 +1,40 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2022,
+        "sourceType": "module",
+        "warnOnUnsupportedTypeScriptVersion": false,
+        "project": ["./tsconfig.json"]
+    },
+    "env": {
+        "browser": false,
+        "node": true,
+        "es2022": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/stylistic"
+        // "airbnb",
+    ],
+    "plugins": [
+        "@typescript-eslint",
+        "playwright",
+        "eslint-plugin-import"
+        // "no-null",
+        // "eslint-plugin-local",
+        // "simple-import-sort"
+    ],
+    "ignorePatterns": ["node_modules/", "dist/"],
+
+    "rules": {
+        "@typescript-eslint/no-explicit-any": "error",
+        "@typescript-eslint/explicit-function-return-type": ["off", {
+            "allowExpressions": false,
+            "allowTypedFunctionExpressions": true,
+            "allowHigherOrderFunctions": true
+          }],
+        "@typescript-eslint/no-floating-promises": "error"
+    }
+}

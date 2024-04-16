@@ -1,0 +1,44 @@
+{
+  "name": "gamdom-playwright-ts",
+  "version": "1.0.0",
+  "description": "Demo test project of gamdom.com",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . --ext .ts,.tsx",
+    "e2e:test": "playwright test",
+    "e2e:test:ui": "playwright test --ui",
+    "e2e:test:headed": "playwright test --headed",
+    "e2e:test:chrome": "playwright test --project=chromium",
+    "e2e:test:headed:chrome": "playwright test --project=chromium --headed",
+    "e2e:test:firefox": "playwright test --project=firefox",
+    "e2e:test:headed:firefox": "playwright test --project=firefox --headed",
+    "e2e:test:debug": "PWDEBUG=1 playwright test",
+    "e2e:test:ci": "playwright test --reporter=dot",
+    "e2e:clean": "rm -rf test-results/",
+    "e2e:generate-report": "npx playwright show-report html-report"
+  },
+  "keywords": [
+    "e2e",
+    "playwright",
+    "test automation",
+    "ui testing"
+  ],
+  "author": "Andrii Lysenko",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.43.0",
+    "@types/node": "^20.12.6",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-playwright": "^1.5.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,60 @@
+@basicUrl = https://demogm.atlassian.net
+@project = 10000
+
+
+@token = <token>
+
+###
+# @name list-events
+GET {{basicUrl}}/rest/api/2/events HTTP/1.1
+content-type: application/json
+Authorization: Basic {{token}}
+
+###
+@issue-id = 10007
+# @name get-event
+GET {{basicUrl}}/rest/api/2/issue/{{issue-id}} HTTP/1.1
+content-type: application/json
+Authorization: Basic {{token}}
+
+###
+# @name get-create-meta
+GET {{basicUrl}}/rest/api/2/issue/createmeta HTTP/1.1
+content-type: application/json
+Authorization: Basic {{token}}
+
+###
+# @name create-issue
+POST {{basicUrl}}/rest/api/2/issue
+Content-Type: application/json
+Authorization: Basic {{token}}
+
+{
+  "fields": {
+    "project":{
+      "id": 10000
+    },
+    "issuetype": {
+      "id": "10001"},
+    "summary": "ALY Test Issue for read tests",
+    "description": "Description for read tests"
+  }
+}
+
+###
+# @name update-issue
+PUT {{basicUrl}}/rest/api/2/issue/{{issue-id}}
+Content-Type: application/json
+Authorization: Basic {{token}}
+
+{
+  "fields": {
+    "project":{
+      "id": 10000
+    },
+    "issuetype": {
+      "id": "10001"},
+    "summary": "Aly Test Issue {{$guid}}",
+    "description": "Order entry fails when selecting supplier."
+  }
+}

@@ -1,0 +1,194 @@
+[
+    {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations,customfield_10010.requestTypePractice",
+    "id": "10007",
+    "self": "https://demogm.atlassian.net/rest/api/2/issue/10007",
+    "key": "QA-8",
+    "fields": {
+      "statuscategorychangedate": "2024-04-17T02:12:25.636+0300",
+      "issuetype": {
+        "self": "https://demogm.atlassian.net/rest/api/2/issuetype/10001",
+        "id": "10001",
+        "description": "A small, distinct piece of work.",
+        "iconUrl": "https://demogm.atlassian.net/rest/api/2/universal_avatar/view/type/issuetype/avatar/10318?size=medium",
+        "name": "Task",
+        "subtask": false,
+        "avatarId": 10318,
+        "entityId": "71b036b4-d82d-4243-a2cd-0a3f4713c124",
+        "hierarchyLevel": 0
+      },
+      "timespent": null,
+      "project": {
+        "self": "https://demogm.atlassian.net/rest/api/2/project/10000",
+        "id": "10000",
+        "key": "QA",
+        "name": "Quality Assurance",
+        "projectTypeKey": "software",
+        "simplified": true,
+        "avatarUrls": {
+          "48x48": "https://demogm.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10418",
+          "24x24": "https://demogm.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10418?size=small",
+          "16x16": "https://demogm.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10418?size=xsmall",
+          "32x32": "https://demogm.atlassian.net/rest/api/2/universal_avatar/view/type/project/avatar/10418?size=medium"
+        }
+      },
+      "fixVersions": [],
+      "aggregatetimespent": null,
+      "resolution": null,
+      "customfield_10027": null,
+      "customfield_10028": null,
+      "customfield_10029": null,
+      "resolutiondate": null,
+      "workratio": -1,
+      "issuerestriction": {
+        "issuerestrictions": {},
+        "shouldDisplay": true
+      },
+      "lastViewed": null,
+      "watches": {
+        "self": "https://demogm.atlassian.net/rest/api/2/issue/QA-8/watchers",
+        "watchCount": 1,
+        "isWatching": true
+      },
+      "created": "2024-04-17T02:12:25.357+0300",
+      "customfield_10020": null,
+      "customfield_10021": null,
+      "customfield_10022": null,
+      "priority": {
+        "self": "https://demogm.atlassian.net/rest/api/2/priority/3",
+        "iconUrl": "https://demogm.atlassian.net/images/icons/priorities/medium.svg",
+        "name": "Medium",
+        "id": "3"
+      },
+      "customfield_10023": null,
+      "customfield_10024": null,
+      "customfield_10025": null,
+      "labels": [],
+      "customfield_10026": null,
+      "customfield_10016": null,
+      "customfield_10017": null,
+      "customfield_10018": {
+        "hasEpicLinkFieldDependency": false,
+        "showField": false,
+        "nonEditableReason": {
+          "reason": "PLUGIN_LICENSE_ERROR",
+          "message": "The Parent Link is only available to Jira Premium users."
+        }
+      },
+      "customfield_10019": "0|i00013:",
+      "timeestimate": null,
+      "aggregatetimeoriginalestimate": null,
+      "versions": [],
+      "issuelinks": [],
+      "assignee": {
+        "self": "https://demogm.atlassian.net/rest/api/2/user?accountId=712020%3A3dc6086f-b3a0-4783-aa95-574757a660bd",
+        "accountId": "712020:3dc6086f-b3a0-4783-aa95-574757a660bd",
+        "emailAddress": "jirauser92@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/0411e06df2af0f44c7ad3e04e30488bd?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJU-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/0411e06df2af0f44c7ad3e04e30488bd?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJU-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/0411e06df2af0f44c7ad3e04e30488bd?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJU-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/0411e06df2af0f44c7ad3e04e30488bd?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJU-0.png"
+        },
+        "displayName": "Jira User",
+        "active": true,
+        "timeZone": "Europe/Sofia",
+        "accountType": "atlassian"
+      },
+      "updated": "2024-04-17T02:12:25.432+0300",
+      "status": {
+        "self": "https://demogm.atlassian.net/rest/api/2/status/10000",
+        "description": "",
+        "iconUrl": "https://demogm.atlassian.net/",
+        "name": "To Do",
+        "id": "10000",
+        "statusCategory": {
+          "self": "https://demogm.atlassian.net/rest/api/2/statuscategory/2",
+          "id": 2,
+          "key": "new",
+          "colorName": "blue-gray",
+          "name": "To Do"
+        }
+      },
+      "components": [],
+      "timeoriginalestimate": null,
+      "description": "Description for read tests",
+      "customfield_10010": null,
+      "customfield_10014": null,
+      "timetracking": {},
+      "customfield_10015": null,
+      "customfield_10005": null,
+      "customfield_10006": null,
+      "security": null,
+      "customfield_10007": null,
+      "customfield_10008": null,
+      "customfield_10009": null,
+      "aggregatetimeestimate": null,
+      "attachment": [],
+      "summary": "ALY Test Issue for read tests",
+      "creator": {
+        "self": "https://demogm.atlassian.net/rest/api/2/user?accountId=712020%3A3dc6086f-b3a0-4783-aa95-574757a660bd",
+        "accountId": "712020:3dc6086f-b3a0-4783-aa95-574757a660bd",
+        "emailAddress": "jirauser92@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/0411e06df2af0f44c7ad3e04e30488bd?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJU-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/0411e06df2af0f44c7ad3e04e30488bd?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJU-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/0411e06df2af0f44c7ad3e04e30488bd?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJU-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/0411e06df2af0f44c7ad3e04e30488bd?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJU-0.png"
+        },
+        "displayName": "Jira User",
+        "active": true,
+        "timeZone": "Europe/Sofia",
+        "accountType": "atlassian"
+      },
+      "subtasks": [],
+      "reporter": {
+        "self": "https://demogm.atlassian.net/rest/api/2/user?accountId=712020%3A3dc6086f-b3a0-4783-aa95-574757a660bd",
+        "accountId": "712020:3dc6086f-b3a0-4783-aa95-574757a660bd",
+        "emailAddress": "jirauser92@gmail.com",
+        "avatarUrls": {
+          "48x48": "https://secure.gravatar.com/avatar/0411e06df2af0f44c7ad3e04e30488bd?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJU-0.png",
+          "24x24": "https://secure.gravatar.com/avatar/0411e06df2af0f44c7ad3e04e30488bd?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJU-0.png",
+          "16x16": "https://secure.gravatar.com/avatar/0411e06df2af0f44c7ad3e04e30488bd?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJU-0.png",
+          "32x32": "https://secure.gravatar.com/avatar/0411e06df2af0f44c7ad3e04e30488bd?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FJU-0.png"
+        },
+        "displayName": "Jira User",
+        "active": true,
+        "timeZone": "Europe/Sofia",
+        "accountType": "atlassian"
+      },
+      "aggregateprogress": {
+        "progress": 0,
+        "total": 0
+      },
+      "customfield_10001": null,
+      "customfield_10002": null,
+      "customfield_10003": null,
+      "customfield_10004": null,
+      "environment": null,
+      "duedate": null,
+      "progress": {
+        "progress": 0,
+        "total": 0
+      },
+      "comment": {
+        "comments": [],
+        "self": "https://demogm.atlassian.net/rest/api/2/issue/10007/comment",
+        "maxResults": 0,
+        "total": 0,
+        "startAt": 0
+      },
+      "votes": {
+        "self": "https://demogm.atlassian.net/rest/api/2/issue/QA-8/votes",
+        "votes": 0,
+        "hasVoted": false
+      },
+      "worklog": {
+        "startAt": 0,
+        "maxResults": 20,
+        "total": 0,
+        "worklogs": []
+      }
+    }
+  }
+]

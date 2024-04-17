@@ -108,6 +108,7 @@
   },
 
   "include":[
+    "api-tests",
     "ui-tests",
     "playwright.config.ts",
     "tests-examples"

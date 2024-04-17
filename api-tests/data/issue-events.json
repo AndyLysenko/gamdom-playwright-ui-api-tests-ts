@@ -1,0 +1,70 @@
+[
+    {
+      "id": 1,
+      "name": "Issue Created"
+    },
+    {
+      "id": 2,
+      "name": "Issue Updated"
+    },
+    {
+      "id": 3,
+      "name": "Issue Assigned"
+    },
+    {
+      "id": 4,
+      "name": "Issue Resolved"
+    },
+    {
+      "id": 5,
+      "name": "Issue Closed"
+    },
+    {
+      "id": 6,
+      "name": "Issue Commented"
+    },
+    {
+      "id": 14,
+      "name": "Issue Comment Edited"
+    },
+    {
+      "id": 17,
+      "name": "Issue Comment Deleted"
+    },
+    {
+      "id": 7,
+      "name": "Issue Reopened"
+    },
+    {
+      "id": 8,
+      "name": "Issue Deleted"
+    },
+    {
+      "id": 9,
+      "name": "Issue Moved"
+    },
+    {
+      "id": 10,
+      "name": "Work Logged On Issue"
+    },
+    {
+      "id": 11,
+      "name": "Work Started On Issue"
+    },
+    {
+      "id": 12,
+      "name": "Work Stopped On Issue"
+    },
+    {
+      "id": 15,
+      "name": "Issue Worklog Updated"
+    },
+    {
+      "id": 16,
+      "name": "Issue Worklog Deleted"
+    },
+    {
+      "id": 13,
+      "name": "Generic Event"
+    }
+  ]

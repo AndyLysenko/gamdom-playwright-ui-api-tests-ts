@@ -5,31 +5,39 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --ext .ts,.tsx",
-    "e2e:test": "playwright test",
-    "e2e:test:ui": "playwright test --ui",
-    "e2e:test:headed": "playwright test --headed",
-    "e2e:test:chrome": "playwright test --project=chromium",
-    "e2e:test:headed:chrome": "playwright test --project=chromium --headed",
-    "e2e:test:firefox": "playwright test --project=firefox",
-    "e2e:test:headed:firefox": "playwright test --project=firefox --headed",
-    "e2e:test:debug": "PWDEBUG=1 playwright test",
-    "e2e:test:ci": "playwright test --reporter=dot",
-    "e2e:clean": "rm -rf test-results/",
-    "e2e:generate-report": "npx playwright show-report html-report"
+    "test:api": "npx jest ./api-tests/specs",
+    "test:ui": "playwright test",
+    "test:ui:ui": "playwright test --ui",
+    "test:ui:headed": "playwright test --headed",
+    "test:ui:chrome": "playwright test --project=chromium",
+    "test:ui:headed:chrome": "playwright test --project=chromium --headed",
+    "test:ui:firefox": "playwright test --project=firefox",
+    "test:ui:headed:firefox": "playwright test --project=firefox --headed",
+    "test:ui:debug": "PWDEBUG=1 playwright test",
+    "test:ui:ci": "playwright test --reporter=dot",
+    "test:ui:clean": "rm -rf test-results/",
+    "test:ui:generate-report": "npx playwright show-report html-report"
   },
   "keywords": [
     "e2e",
     "playwright",
     "test automation",
-    "ui testing"
+    "ui testing",
+    "jest",
+    "api testing",
+    "jira api"
   ],
   "author": "Andrii Lysenko",
   "license": "MIT",
   "devDependencies": {
+    "@jest/globals": "^29.7.0",
     "@playwright/test": "^1.43.0",
-    "@types/node": "^20.12.6",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.7",
+    "@types/uuid": "^9.0.8",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
+    "axios": "^1.6.8",
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "^19.0.4",
@@ -39,6 +47,9 @@
     "eslint-plugin-n": "^16.6.2",
     "eslint-plugin-playwright": "^1.5.2",
     "eslint-plugin-promise": "^6.1.1",
-    "typescript": "^5.4.5"
+    "openapi-typescript-codegen": "^0.29.0",
+    "ts-jest": "^29.1.2",
+    "typescript": "^5.4.5",
+    "uuid": "^9.0.1"
   }
 }

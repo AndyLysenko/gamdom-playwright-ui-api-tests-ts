@@ -25,3 +25,5 @@ jobs:
 
     - name: Run API tests
       run: npm run test:api
+      env:
+        JIRA_DEMOQA_TOKEN: ${{ secrets.JIRA_DEMOQA_TOKEN }}

@@ -12,6 +12,8 @@ The project was created as part of a task to evaluate expertise in UI test autom
 - [TypeScript](https://www.typescriptlang.org/)
 - [Jest](https://jestjs.io/)
 - [ESLint](https://eslint.org/)
+- [Axios](https://axios-http.com/)
+- [openapi-typescript-codegen](https://www.npmjs.com/package/openapi-typescript-codegen)
 
 ## Approach
 
@@ -25,7 +27,7 @@ UI tests were created based on exploratory testing of the Gamdom website.
 
 ### API Tests
 
-API tests focus on the JIRA Issues API. A meaningful workflow encompassing CRUD operations of the Issues feature was created. Four to five endpoints were chosen and automated using Playwright's API capabilities.
+API tests focus on the JIRA Issues API. A meaningful workflow encompassing CRUD operations of the Issues feature was created. Four to five endpoints were chosen and automated using Playwright's API capabilities. The [openapi-typescript-codegen](https://www.npmjs.com/package/openapi-typescript-codegen) was used to generate HTTP clients for the API tests.
 
 ## Project Structure
 
@@ -46,6 +48,17 @@ API tests focus on the JIRA Issues API. A meaningful workflow encompassing CRUD 
 2. Navigate to the project directory: `cd gamdom-playwright-ui-api-tests-ts`
 3. Install the dependencies: `npm install`
 4. Update the `JIRA_DEMOQA_TOKEN` in the `.env` file at the root of the project with your actual JIRA token. If you preferred, set `JIRA_DEMOQA_TOKEN` as an environment variable in your system settings.
+
+### Regenerating HTTP Client and Models
+
+The HTTP client and models are generated using the [openapi-typescript-codegen](https://www.npmjs.com/package/openapi-typescript-codegen) tool. To regenerate these, follow the steps below:
+
+1. Install the tool globally with `npm install -g openapi-typescript-codegen`.
+2. Run the command:
+
+```bash
+openapi --input https://dac-static.atlassian.com/cloud/jira/platform/swagger.v3.json?_v=1.7108.0-0.1305.0 --output ./generated --client axios --useUnionTypes
+```
 
 ## Running the Tests
 
